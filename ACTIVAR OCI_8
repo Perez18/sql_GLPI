@@ -1,0 +1,10 @@
+VIDEO: https://www.youtube.com/watch?v=kdWWnPC4xzs
+**DESCARGAR INSTANCIA DEL CLIENTE ORACLE  https://www.oracle.com/database/technologies/instant-client/downloads.html
+VERSION Basic Package y moverlo a disco C: 
+**CONFIGURAR PATH EN WINDOWS  Panel de control\Sistema y seguridad\Sistema para permiso de la carpeta instancia
+
+**EDITAR php.ini  quitar el ;
+;extension=oci_8.dll
+;extension=oci_8_11g.dll
+
+**MOVER ARCHIVO DE LO DESCARGADO(INSTANCIA CLIENTE) A c:\xampp\php\ext
