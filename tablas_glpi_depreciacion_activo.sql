@@ -54,16 +54,18 @@ CREATE TABLE `glpi_plugin_depreciacion_control` (
   UNIQUE KEY `glpi_plugin_depreciacion_control_un` (`ano`,`mes`)
 ) ENGINE=InnoDB AUTO_INCREMENT=297 DEFAULT CHARSET=latin1;
 
+
 CREATE TABLE `glpi_plugin_depreciacion_historica` (
-  `id` int(11) DEFAULT NULL,
-  `ano` int(11) DEFAULT NULL,
-  `mes` int(11) DEFAULT NULL,
+  `id` int(11) NOT NULL,
+  `ano` int(11) NOT NULL,
+  `mes` int(11) NOT NULL,
   `dep_mensual` decimal(20,2) DEFAULT NULL,
   `dep_acumulada` decimal(20,2) DEFAULT NULL,
   `valor_neto` decimal(20,2) DEFAULT NULL,
   `observaciones` varchar(100) DEFAULT NULL,
   `dias_transcurrido` int(11) DEFAULT NULL,
   `no_docu` varchar(100) DEFAULT NULL,
+  PRIMARY KEY (`id`,`ano`,`mes`),
   UNIQUE KEY `glpi_historico_un` (`id`,`ano`,`mes`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
