@@ -20,3 +20,6 @@ INSERT INTO glpi.glpi_plugin_genericobject_typefamilies (id,name,comment,date_mo
 ,(7,'Tecnologia',NULL,'2019-10-11 00:00:00.000','2019-10-11 00:00:00.000','145001001000000','600015003000000'),
 
 ;
+-------------------------------
+alter table glpi_plugin_genericobject_typefamilies add  cuenta_depreciacion varchar(100);
+alter table glpi_plugin_genericobject_typefamilies add  cuenta_gasto varchar(100);
