@@ -16,8 +16,6 @@ CREATE TABLE `glpi_plugin_depreciacion_activos` (
   `valor_real` decimal(20,2) DEFAULT NULL,
   `tiempo_uso` varchar(100) DEFAULT NULL,
   `dep_mensual` decimal(20,2) DEFAULT NULL,
-  `ano` int(12) DEFAULT NULL,
-  `mes` int(12) DEFAULT NULL,
   `dias_transcurrido` int(12) DEFAULT NULL,
   `cuenta_depreciacion` varchar(15) DEFAULT NULL,
   `cuenta_gasto` varchar(15) DEFAULT NULL,
