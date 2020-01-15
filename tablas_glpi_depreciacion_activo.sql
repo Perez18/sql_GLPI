@@ -22,8 +22,7 @@ CREATE TABLE `glpi_plugin_depreciacion_activos` (
   `cia_master` varchar(15) DEFAULT NULL,
   `familia` int(11) DEFAULT NULL,
   `estado` varchar(20) DEFAULT NULL,
-  PRIMARY KEY (`id`),
-  KEY `glpi_plugin_depreciacion_activos_ano_idx` (`ano`,`mes`,`tipo`) USING BTREE
+  PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 CREATE TABLE `glpi_plugin_depreciacion_bitacora` (
