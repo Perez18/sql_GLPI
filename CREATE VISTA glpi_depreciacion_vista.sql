@@ -337,7 +337,7 @@ SELECT DISTINCT i.id,tg.name tipo,pgls.name ,i.bill,i.buy_date ,i.value,
           from glpi_infocoms i 
           LEFT join glpi_plugin_genericobject_licencias pgls    -- CAMBIAR EL NOMBRE POR LA DE PRODUCCION -- 
           on i.items_id = pgls.id    
-          LEFT join glpi_locations l                             /* MEJORA *FAMILIA AMORTIZABLE  */
+          LEFT join glpi_locations l                             /* LICENCIA *FAMILIA AMORTIZABLE  */
           on pgls.locations_id = l.id                    
           LEFT join glpi_users u
           on pgls.users_id = u.id 
@@ -353,7 +353,7 @@ SELECT DISTINCT i.id,tg.name tipo,pgls.name ,i.bill,i.buy_date ,i.value,
           from glpi_infocoms i 
           LEFT join glpi_plugin_genericobject_otrogastos pgls    -- CAMBIAR EL NOMBRE POR LA DE PRODUCCION -- 
           on i.items_id = pgls.id    
-          LEFT join glpi_locations l                             /* MEJORA *FAMILIA AMORTIZABLE  */
+          LEFT join glpi_locations l                             /* OTRO GASTO *FAMILIA AMORTIZABLE  */
           on pgls.locations_id = l.id                    
           LEFT join glpi_users u
           on pgls.users_id = u.id 
@@ -369,7 +369,7 @@ SELECT DISTINCT i.id,tg.name tipo,pgls.name ,i.bill,i.buy_date ,i.value,
           from glpi_infocoms i 
           LEFT join glpi_plugin_genericobject_wacoms pgls    -- CAMBIAR EL NOMBRE POR LA DE PRODUCCION -- 
           on i.items_id = pgls.id    
-          LEFT join glpi_locations l                             /* MEJORA *FAMILIA AMORTIZABLE  */
+          LEFT join glpi_locations l                             /* WACOM *FAMILIA WACOM  */
           on pgls.locations_id = l.id                    
           LEFT join glpi_users u
           on pgls.users_id = u.id 
