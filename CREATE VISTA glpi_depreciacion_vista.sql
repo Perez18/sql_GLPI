@@ -1,3 +1,4 @@
+CREATE VIEW glpi_plugin_depreciacion_vista_activos as
 SELECT  i.id,i.itemtype,c.name,i.bill ,i.buy_date,i.value ,i.sink_time,l.id id_ubicacion,l.locations_id, l.completename ubicacion, 
 u.name user,i.date_creation,null cuenta_depreciacion ,null cuenta_gasto,null familia
          from glpi_infocoms i 
